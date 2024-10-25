@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Bootstrap/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <title>Operators</title>
+</head>
+<body>
+    <form class="container" onsubmit="return validateForm()">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text"
+            class="form-control" id="email" placeholder="Enter you email">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter your password">
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Sign in</button>
+    </form>
+    
+
+    <script>
+        function validateForm() {
+    let email = document.getElementById('email').value;
+    let pass = document.getElementById('password').value;
+
+    if (email === "" || pass === "") {
+        alert('Complete all input fields!');
+        return false;
+    } 
+    return true;
+}
+    </script>
+</body>
+</html>

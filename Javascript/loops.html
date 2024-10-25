@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Bootstrap/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <title>Loops</title>
+</head>
+<body>
+    <h1>Loops in Javascript</h1>
+    <ul>
+        <li>for loop</li>
+        <li>while loop</li>
+        <li>do while loop</li>
+    </ul>
+    
+    <!-- <p id="demo"></p> -->
+
+    <!-- STRING METHOD -->
+
+    <h1>JavaScript String Methods</h1>
+    <p>Convert string to upper case:</p>
+
+    <button onclick="myFunction()" class="btn btn-primary ms-2" >Try it</button>
+
+    <p id="para" class="ms-3 mt-4 fs-4">Hello World!</p>
+
+    
+    <script>
+        function myFunction() {
+        let text = document.getElementById("para").innerHTML;
+        document.getElementById("para").innerHTML = text.toUpperCase();
+        }
+    </script>
+
+    <script src="loops.js"></script>
+</body>
+</html>
