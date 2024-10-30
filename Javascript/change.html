@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Bootstrap/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <title>Change Color</title>
+</head>
+<body class="bg-dark text-light" id="body">
+    <div class="container">
+        <h1>Background Change</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptatem magnam recusandae laudantium rerum obcaecati iure illum minus distinctio ipsum.</p>
+        <div>
+            <button type="button" class="btn btn-primary mt-2" ondblclick="colorChange2()" onclick="colorChange()" >Change background</button>
+        </div>
+    </div>
+
+    <script>
+        function colorChange(){
+            const element = document.getElementById('body');
+            element.classList.remove('bg-dark');
+            element.classList.add('bg-danger');
+        }
+        function colorChange2(){
+            const element = document.getElementById('body');
+            element.classList.remove('bg-danger');
+            element.classList.add('bg-dark');
+        }
+    </script>
+</body>
+</html>
