@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Bootstrap/bootstrap-5.3.3-dist/css/bootstrap.css">
+    <title>Colors</title>
+</head>
+<body id="body">
+    <h1>Colors Change</h1>
+    <div>
+        <h2>Random Text</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea modi, optio sint at quos quasi sit atque nobis? Reprehenderit, aut?</p>
+        <button type="button" class="btn btn-primary" onclick="color()">change color</button>
+    </div>
+
+    <script>
+        const colors = ['bg-dark', 'bg-success', 'bg-primary', 'bg-info', 'bg-warning'];
+        let currentColor = 0;
+        function color(){
+            const element = document.getElementById('body');
+            element.classList.remove(colors[currentColor]);
+            
+            currentColor = [currentColor + 1] % colors.length;
+            
+            element.classList.add(colors[currentColor]);
+            
+        }
+    </script>
+</body>
+</html>
